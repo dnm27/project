@@ -97,7 +97,37 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+#wrapper {
+  width: 1208px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+/* f and z layout csss */
+.fz_wrapper {
+  display:flex;
+}
+.top_bar {
+  align-items: center;
+}
+.top_bar img {
+  /* calculated from wrapper width = 1208 */
+  /* https://www.kostelijk.nl/thegoldenratiocalculator/index.php#formplace */
+  height: 747px;
+  width: 100%;
+}
+.side_bar_left {
+  width: 20%;
+  padding-right: 5%;
+}
+.side_bar_right{
+  width: 20%;
+  padding-left: 5%;
+}
+.fz_content {
+  flex: 1 0 auto;
+  width: 70%;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
